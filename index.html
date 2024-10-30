@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Bot Messenger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>FAKE BOT MESSENGER</h3>
+  <div class="container">
+    <div class="wrapper">
+      <div id="chatContainer">
+        <p id="pertanyaan" class="message bot-message">Halo, Perkenalkan Nama Saya LerryBot. Siapa Nama Kamu?</p>
+        <div class="typing" id="typingIndicator">LerryBot is typing...</div>
+      </div>
+      <div class="input-container">
+        <input id="jawaban" type="text" placeholder="Ketik pesan kamu disini" onkeydown="if(event.key === 'Enter') botStart()" />
+        <button onclick="botStart()">Send</button>
+        <button onclick="botEnd()">End Chat</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
